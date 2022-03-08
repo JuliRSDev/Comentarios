@@ -17,6 +17,7 @@ import { VerComentarioComponent } from './components/ver-comentario/ver-comentar
 import { FormularioComponent } from './components/noticias/formulario/formulario.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ListadoNoticiasComponent } from './components/noticias/listado-noticias/listado-noticias.component';
+import { SpinnerComponent } from './components/noticias/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ListadoNoticiasComponent } from './components/noticias/listado-noticias
     VerComentarioComponent,
     FormularioComponent,
     NoticiasComponent,
-    ListadoNoticiasComponent
+    ListadoNoticiasComponent,
+    SpinnerComponent,
   ],
     imports: [
         BrowserModule,
