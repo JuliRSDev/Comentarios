@@ -47,6 +47,9 @@ export class FormularioComponent implements OnInit {
       categoria: this.categoriaSeleccionada,
       pais: this.paisSeleccionada
     }
+
+    /* Vamos a emitir ese valor hacia el componete padre */
+    this.parametrosSeleccionados.emit( PARAMETROS );
   }
 
 }

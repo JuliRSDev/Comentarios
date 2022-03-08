@@ -6,20 +6,17 @@ import {NoticiaService} from "../../services/noticia.service";
   templateUrl: './noticias.component.html',
   styleUrls: ['./noticias.component.css']
 })
-export class NoticiasComponent implements OnInit {
+export class NoticiasComponent {
 
   listNoticias: any[] = [];
 
   constructor( private noticiaService: NoticiaService) { }
 
-  ngOnInit(): void {
-  }
-
   buscarNoticias( parametros: any ) {
 
     this.noticiaService.getNoticias( parametros ).subscribe(
       data => {
-
+        this.listNoticias = data.articles;
       }, error => {
         console.log( error );
       }

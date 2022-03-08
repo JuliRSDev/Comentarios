@@ -16,6 +16,7 @@ import { ListComentariosComponent } from './components/list-comentarios/list-com
 import { VerComentarioComponent } from './components/ver-comentario/ver-comentario.component';
 import { FormularioComponent } from './components/noticias/formulario/formulario.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
+import { ListadoNoticiasComponent } from './components/noticias/listado-noticias/listado-noticias.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
     ListComentariosComponent,
     VerComentarioComponent,
     FormularioComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    ListadoNoticiasComponent
   ],
     imports: [
         BrowserModule,

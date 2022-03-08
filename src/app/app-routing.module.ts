@@ -5,14 +5,14 @@ import {
   AgregarEditarComentarioComponent
 } from "./components/agregar-editar-comentario/agregar-editar-comentario.component";
 import {VerComentarioComponent} from "./components/ver-comentario/ver-comentario.component";
-import {FormularioComponent} from "./components/noticias/formulario/formulario.component";
+import {NoticiasComponent} from "./components/noticias/noticias.component";
 
 const routes: Routes = [
   { path: '', component: ListComentariosComponent },
   { path: 'agregar', component: AgregarEditarComentarioComponent },
   { path: 'editar/:id', component: AgregarEditarComentarioComponent },
   { path: 'ver/:id', component: VerComentarioComponent },
-  { path: 'formulario', component: FormularioComponent },
+  { path: 'noticias', component: NoticiasComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
