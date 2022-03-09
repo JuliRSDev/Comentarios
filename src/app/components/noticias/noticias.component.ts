@@ -9,18 +9,27 @@ import {NoticiaService} from "../../services/noticia.service";
 export class NoticiasComponent {
 
   listNoticias: any[] = [];
+  loading = false;
 
   constructor( private noticiaService: NoticiaService) { }
 
   buscarNoticias( parametros: any ) {
 
-    this.noticiaService.getNoticias( parametros ).subscribe(
-      data => {
-        this.listNoticias = data.articles;
-      }, error => {
-        console.log( error );
-      }
-    )
+    this.loading = true;
+    this.listNoticias = [];
+
+    setTimeout( () => {
+      this.noticiaService.getNoticias( parametros ).subscribe(
+        data => {
+          this.loading = false;
+          this.listNoticias = data.articles;
+        }, error => {
+          console.log( error );
+          this.loading = false;
+        }
+      )
+    }, 1000 )
+
   }
 
 }

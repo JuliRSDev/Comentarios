@@ -8,8 +8,7 @@ import {Comentario} from "../interfaces/Comentario";
 })
 export class ComentarioService {
 
-  // Los servicios se usan para hacer las peticiones Http hacía nuestro backend, para reutilizar codigo, y
-  // comunicación entre componentes
+  // /*"start": "ng serve --proxy-config proxy.conf.json",*/
 
   private myAppUrl = 'https://localhost:44369/';
   private myApiUrl = 'api/comentario/';
